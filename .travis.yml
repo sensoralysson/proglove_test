@@ -1,0 +1,32 @@
+language: android
+dist: xenial
+android:
+  components:
+    - tools
+    - platform-tools
+    - build-tools-29.0.0
+    - android-29
+    - extra-google-google_play_services
+    - extra-google-m2repository
+    - extra-android-m2repository
+    - addon-google_apis-google-28
+before_install:
+  # Replacing the public repo url with the alpha repo url. The url must contain a entitlement token
+  - sed -i "s,url \".*\",url \"$PROGLOVE_URL\",g" build.gradle
+jobs:
+  include:
+    - stage: build
+      if: type = "pull_request" OR branch = development
+      script:
+        - "./gradlew assembleDebug"
+    - stage: deploy
+      if: branch = master AND type != "pull_request"
+      script:
+        - "./gradlew assembleDebug"
+      deploy:
+        - provider: script
+          script: "./scripts/publish_code.sh"
+          skip_cleanup: true
+          on:
+            repo: workaroundgmbh/pg_api_android_examples_private
+            branch: master

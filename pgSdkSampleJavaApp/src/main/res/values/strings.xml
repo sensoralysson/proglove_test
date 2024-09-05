@@ -1,0 +1,86 @@
+<resources>
+    <string name="app_name">Demo ProGlove Sensorville</string>
+    <string name="title_activity_main">Amostra do scanner</string>
+    <string name="title_activity_display">Exibir amostra</string>
+    <string name="last_scanned_text">Ultimo texto scanneado</string>
+    <string name="display_connected">Display conectado</string>
+    <string name="display_disconnected">Display desconectado</string>
+    <string name="service_connected">Serviço conectado</string>
+    <string name="service_connecting">Conectando…</string>
+    <string name="connect_service">Conectar serviço</string>
+    <string name="scanner_connected">Scanner conectado</string>
+    <string name="pair_scanner">Parear scanner</string>
+    <string name="connect_to_service_first">Por favor, conecte ao serviço primeiro!</string>
+    <string name="pair_scanner_first">Por favor, pareie o scanner primeiro!</string>
+    <string name="barcode_output_default">…</string>
+    <string name="symbology_label_text">Simbolo do ultimo scan:</string>
+    <string name="service_connection_lbl">Conecção do serviço:</string>
+    <string name="pair_from_pinned_activity">Pair from pinned Activity</string>
+    <string name="list_data">Carregar lista de produtos</string>
+    <string name="start_process">Iniciar leituras</string>
+    <string name="feedback_id_1">Successo</string>
+    <string name="feedback_id_2">Erro</string>
+    <string name="feedback_id_3">Info</string>
+    <string name="feedback_text_hint">Texto de feedback</string>
+    <string name="trigger_feedback_button">Trigger Feedback</string>
+    <string name="display_connection_state_label">Estado de conexão display</string>
+    <string name="display_state_unknown">Estado do display desconhecido</string>
+    <string name="connect_display">Conectar dispositivo display</string>
+    <string name="disconnect_display">Desonectar dispositivo display</string>
+    <string name="get_display_state">Checar estado display</string>
+    <string name="send_screen">Enviar teste de tela</string>
+    <string name="send_screen_failing">Enviar um teste errado de tela</string>
+    <string name="send_pg1_screen">Enviar teste de tela PG1 ao display</string>
+    <string name="send_pg1a_screen">Enviar teste de tela PG2 ao display</string>
+    <string name="device_name_hint">Nome dispositivo</string>
+    <string name="take_image_button">Obter imagem</string>
+    <string name="image_configurations">Configurações de imagem</string>
+    <string name="resolution_high">1280x960</string>
+    <string name="resolution_medium">640x480</string>
+    <string name="resolution_low">320x240</string>
+    <string name="image_quality_text">Qualidade</string>
+    <string name="timeout_text">timeout ms</string>
+    <string name="image_will_appear_here">Imagem aparecerá aqui</string>
+    <string name="use_default_scan_feedback">Usar feedback padrão no scan</string>
+    <string name="new_scan_notification">Novo scan: %1$s (%2$s)</string>
+    <string name="new_scan_no_symbology_notification">Novo scan: %1$s</string>
+    <string name="button_pressed">Botão pressionado: %1$d</string>
+    <string name="no_display_connected">Não há display conectado</string>
+    <string name="send_with_replace_queue">Enviar feedback com replaceQueue?</string>
+    <string name="pick_display_orientation">Escolher orientação do display</string>
+    <string name="refresh_config_profiles">Resetar perfis de configuração</string>
+    <string name="change_profile">Trocar perfil:</string>
+    <string name="custom_profile">Perfil 1</string>
+    <string name="profile_active">Ativo</string>
+    <string name="block_trigger_label">Bloquear trigger:</string>
+    <string name="trigger_block">Bloquear</string>
+    <string name="trigger_unblock">Desbloquear</string>
+
+    // strings tela de load data
+
+    <string name="insert_data_title">Inserir dados</string>
+    <string name="codigo_produto_entrada">Código produto</string>
+    <string name="codigo_leitura_entrada">Código produto</string>
+    <string name="qtde_produto_entrada">Qtde. produto</string>
+    <string name="destino_codigo_entrada">Código destino</string>
+    <string name="botao_add_dados">Adicionar dados na tabela</string>
+    <string name="botao_add_tabela">Adicionar planilha de dados</string>
+    <string name="botao_save_data">Salvar dados e voltar</string>
+    <string name="dados_registrados">Dados registrados</string>
+    <string name="texto_cod_prod">Código Prod.</string>
+    <string name="texto_qtde_prod">Qtde. Prod.</string>
+    <string name="texto_destino_prod">Código Destino</string>
+
+    // strings tela de start readings
+
+    <string name="codigo_prod_lido">Código do produto</string>
+    <string name="codigo_dest_lido">Código de destino</string>
+    <string name="qtde_prod_lida">Qtde. produto</string>
+    <string name="destino_cod_lido">Código destino</string>
+    <string name="campo_cod_prod"> </string>
+    <string name="campo_qtd_prod"> </string>
+    <string name="campo_cod_dest"> </string>
+    <string name="codigo_lido_status">Código Produto lido</string>
+    <string name="dest_prod_status">Código destino lido</string>
+
+</resources>

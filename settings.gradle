@@ -1,0 +1,3 @@
+include ':aidlconnect-1.5.0'
+include ':connect-sdk-1.4.0' // arquivos de bibliotecas necessariaas para execucao do app de integracao SDK
+include ':common', ':pgSdkSampleJavaApp'

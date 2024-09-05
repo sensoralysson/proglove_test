@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:orientation="vertical"
+    android:visibility="visible">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="6dp"
+                    android:fontFamily="serif"
+                    android:gravity="center"
+                    android:text="@string/insert_data_title"
+                    android:textColor="#000"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="5dp"
+                    android:background="#D3D3D3" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="5dp"
+                    android:background="#000" />
+
+                <EditText
+                    android:id="@+id/edtProduct"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:autofillHints=""
+                    android:fontFamily="serif"
+                    android:hint="@string/codigo_produto_entrada"
+                    android:inputType="text"
+                    android:padding="8dp"
+                    android:textColor="#000000" />
+
+                <EditText
+                    android:id="@+id/edtReadCode"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:autofillHints=""
+                    android:fontFamily="serif"
+                    android:hint="@string/codigo_leitura_entrada"
+                    android:inputType="number"
+                    android:padding="8dp"
+                    android:textColor="#000000" />
+
+                <EditText
+                    android:id="@+id/edtQty"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:autofillHints=""
+                    android:fontFamily="serif"
+                    android:hint="@string/qtde_produto_entrada"
+                    android:inputType="number"
+                    android:padding="8dp"
+                    android:textColor="#000000"
+                    android:visibility="visible" />
+
+                <EditText
+                    android:id="@+id/edtDestiny"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:autofillHints=""
+                    android:fontFamily="serif"
+                    android:hint="@string/destino_codigo_entrada"
+                    android:inputType="text"
+                    android:padding="8dp"
+                    android:textColor="#000000" />
+
+                <Button
+                    android:id="@+id/BtnAdd"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="serif"
+                    android:onClick="addRegister"
+                    android:text="@string/botao_add_dados"
+                    android:textColor="#000000" />
+
+                <Button
+                    android:id="@+id/BntLoadTable"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="serif"
+                    android:text="@string/botao_add_tabela"
+                    android:textColor="#000000" />
+
+                <Button
+                    android:id="@+id/BtnSave"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="serif"
+                    android:text="@string/botao_save_data"
+                    android:textColor="#000000" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <View
+                        android:id="@+id/view"
+                        android:layout_width="40dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0" />
+
+                    <View
+                        android:id="@+id/view3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="6dp"
+                        android:fontFamily="serif"
+                        android:gravity="center"
+                        android:text="@string/dados_registrados"
+                        android:textColor="#000"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                    <View
+                        android:id="@+id/view2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" />
+
+                    <ImageButton
+                        android:id="@+id/BtnTrash"
+                        android:layout_width="40dp"
+                        android:layout_height="45dp"
+                        android:layout_weight="0"
+                        app:srcCompat="@android:drawable/ic_menu_delete" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="5dp"
+                android:background="#D3D3D3" />
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="5dp"
+                android:background="#000" />
+
+            <TableLayout
+                android:id="@+id/main_table"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:stretchColumns="0,1">
+            </TableLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

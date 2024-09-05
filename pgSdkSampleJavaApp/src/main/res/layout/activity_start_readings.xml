@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF"
+    tools:context="com.example.Demo_App_SV.StartReadings">
+
+    <TextView
+        android:id="@+id/TextoCodProd"
+        android:layout_width="203dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="37dp"
+        android:layout_marginBottom="37dp"
+        android:fontFamily="serif"
+        android:gravity="center_horizontal|center_vertical"
+        android:text="@string/codigo_prod_lido"
+        android:textColor="#000"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/ExibeCodProd"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.509"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/ExibeCodProd"
+        android:layout_width="197dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="33dp"
+        android:gravity="center_horizontal|center_vertical"
+        android:text="@string/campo_cod_prod"
+        android:fontFamily="serif"
+        android:textColor="#000"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@+id/divider"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TextoCodProd" />
+
+    <TextView
+        android:id="@+id/textoQtdProd"
+        android:layout_width="204dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="33dp"
+        android:layout_marginBottom="37dp"
+        android:fontFamily="serif"
+        android:gravity="center_horizontal|center_vertical"
+        android:text="@string/qtde_prod_lida"
+        android:textColor="#000"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@+id/ExibeQtdProd"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/divider" />
+
+    <TextView
+        android:id="@+id/ExibeQtdProd"
+        android:layout_width="204dp"
+        android:layout_height="40dp"
+        android:fontFamily="serif"
+        android:gravity="center_horizontal|center_vertical"
+        android:text="@string/campo_qtd_prod"
+        android:textColor="#000"
+        android:textSize="14sp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@+id/divider2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textoQtdProd" />
+
+
+    <TextView
+        android:id="@+id/textoCodDest"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="33dp"
+        android:layout_marginBottom="37dp"
+        android:gravity="center_horizontal|center_vertical"
+        android:text="@string/codigo_dest_lido"
+        android:fontFamily="serif"
+        android:textColor="#000"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/ExibeDestProd"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/divider2" />
+
+    <TextView
+        android:id="@+id/ExibeDestProd"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="216dp"
+        android:gravity="center_horizontal|center_vertical"
+        android:text="@string/campo_cod_dest"
+        android:fontFamily="serif"
+        android:textColor="#000"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textoCodDest" />
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="409dp"
+        android:layout_height="4dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginEnd="1dp"
+        android:background="?android:attr/listDivider"
+        android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@+id/textoQtdProd"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ExibeCodProd" />
+
+    <View
+        android:id="@+id/divider2"
+        android:layout_width="409dp"
+        android:layout_height="4dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="33dp"
+        android:layout_marginEnd="1dp"
+        android:background="?android:attr/listDivider"
+        app:layout_constraintBottom_toTopOf="@+id/textoCodDest"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ExibeQtdProd" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
